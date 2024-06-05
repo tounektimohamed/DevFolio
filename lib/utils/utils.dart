@@ -15,10 +15,7 @@ class StaticUtils {
   static const String blackWhitePhoto = 'assets/photos/black-white.png';
 
   // work
-  static const String dsc = 'assets/work/dsc.png';
-  static const String sastaticket = 'assets/work/st.png';
-  static const String university = 'assets/work/cui.png';
-  static const String fullterIsb = 'assets/work/flutterIsl.png';
+
 
   // services
   static const String uiux = 'assets/services/ui.png';
@@ -38,18 +35,18 @@ class StaticUtils {
   ];
 
   static const List<String> socialLinks = [
-    "https://facebook.com/mhmzdev",
-    "https://instagram.com/mhmzdev",
-    "https://twitter.com/mhmzdev",
-    "https://linkedin.com/in/mhmzdev",
-    "https://github.com/mhmzdev",
-    "https://mhmzdev.medium.com"
+    "https://facebook.com/tounektimohamed",
+    "https://instagram.com/tounektimohamed",
+    "https://twitter.com/tounektimohamed",
+    "https://linkedin.com/in/tounektimohamed",
+    "https://github.com/tounektimohamed",
+    "https://tounektimohamed.medium.com"
   ];
 
   static const String resume =
-      'https://drive.google.com/file/d/1bDNNrkQtNVJbXcdwMSx0crQQvAF_nMwV/view?usp=sharing';
+      'https://drive.google.com/file/d/1fYgxVVO2SGjvyHD4Xi7irJ9DV7cL4d7k/view?usp=sharing';
 
-  static const String gitHub = 'https://github.com/mhmzdev';
+  static const String gitHub = 'https://github.com/tounektimohamed';
 }
 
 class BodyUtils {

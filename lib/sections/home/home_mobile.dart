@@ -43,6 +43,8 @@ class HomeMobile extends StatelessWidget {
                     Text(
                       "HEY THERE! ",
                       style: AppText.b2!.copyWith(
+                                color: AppTheme.c!.primary,
+
                         fontFamily: 'Montserrat',
                       ),
                     ),
@@ -55,14 +57,14 @@ class HomeMobile extends StatelessWidget {
                 ),
                 Space.y!,
                 Text(
-                  "Muhammad",
+                  "Mohamed",
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Tounekti",
                   style: AppText.h3b!.copyWith(
                     height: 1,
                   ),
@@ -79,12 +81,13 @@ class HomeMobile extends StatelessWidget {
                         TyperAnimatedText(
                           ' Flutter Developer',
                           speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
+                          textStyle: AppText.b2,
                         ),
                         TyperAnimatedText(
                           ' UI/UX Enthusiast',
                           speed: const Duration(milliseconds: 50),
                           textStyle: AppText.b1,
+                          
                         ),
                         TyperAnimatedText(
                           ' A friend :)',
@@ -97,7 +100,7 @@ class HomeMobile extends StatelessWidget {
                     ),
                   ],
                 ),
-                Space.y!,
+                Space.y1!,
                 const SocialLinks(),
               ],
             ),

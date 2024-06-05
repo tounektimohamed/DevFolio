@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:folio/configs/app_theme.dart';
 import 'package:folio/configs/app_typography.dart';
 
 class CustomSectionHeading extends StatelessWidget {
@@ -14,6 +15,7 @@ class CustomSectionHeading extends StatelessWidget {
     return Text(
       text,
       style: AppText.h1!.copyWith(
+        color: AppTheme.c!.primary,
         fontFamily: 'Montserrat',
       ),
     );
@@ -30,8 +32,8 @@ class CustomSectionSubHeading extends StatelessWidget {
   Widget build(BuildContext context) {
     return Text(
       text,
-      style: AppText.l1!.copyWith(
-        fontFamily: 'Montserrat',
+      style: AppText.b2!.copyWith(
+        color: AppTheme.c!.primary,
       ),
     );
   }

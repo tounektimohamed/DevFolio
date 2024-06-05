@@ -26,6 +26,7 @@ class AboutDesktop extends StatelessWidget {
         children: [
           const CustomSectionHeading(
             text: '\nAbout Me',
+            
           ),
           const CustomSectionSubHeading(
             text: 'Get to know me :)',
@@ -57,6 +58,8 @@ class AboutDesktop extends StatelessWidget {
                         AboutUtils.aboutMeHeadline,
                         style: AppText.b1b!.copyWith(
                           fontFamily: 'Montserrat',
+                               color: AppTheme.c!.primary,
+                
                         ),
                       ),
                       Space.y!,
@@ -85,6 +88,7 @@ class AboutDesktop extends StatelessWidget {
                       Space.y!,
                       Row(
                         children: kTools
+                        
                             .map((e) => ToolTechWidget(
                                   techName: e,
                                 ))
@@ -92,7 +96,7 @@ class AboutDesktop extends StatelessWidget {
                       ),
                       Space.y!,
                       Divider(
-                        color: Colors.grey[800],
+                        color: const Color.fromARGB(255, 240, 240, 240),
                         thickness: AppDimensions.normalize(0.5),
                       ),
                       Row(
@@ -102,11 +106,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Name",
-                                information: "Muhammad Hamza",
+                                information: "Mohamed Tounekti",
                               ),
                               AboutMeData(
                                 data: "Age",
-                                information: "24",
+                                information: "28",
                               ),
                             ],
                           ),
@@ -116,11 +120,11 @@ class AboutDesktop extends StatelessWidget {
                             children: const [
                               AboutMeData(
                                 data: "Email",
-                                information: "hamza.6.shakeel@gmail.com",
+                                information: "tounekti17@gmail.com",
                               ),
                               AboutMeData(
                                 data: "From",
-                                information: "Attock, PK",
+                                information: "Tunisia",
                               ),
                             ],
                           ),

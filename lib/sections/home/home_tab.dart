@@ -67,14 +67,14 @@ class HomeTab extends StatelessWidget {
                 ),
                 Space.y1!,
                 Text(
-                  "Muhammad",
+                  "Mohamed",
                   style: AppText.h1!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Hamza",
+                  "Tounekti",
                   style: AppText.h1b!.copyWith(
                     height: 1,
                   ),
@@ -112,8 +112,6 @@ class HomeTab extends StatelessWidget {
                     ],
                   ),
                 ),
-                Space.y2!,
-                const SocialLinks(),
               ],
             ),
           ),
