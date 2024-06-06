@@ -40,6 +40,9 @@ dependencies:
   # cache
   shared_preferences: ^2.0.6
   firebase_core: ^3.0.0
+  google_maps_flutter: ^2.6.1
+  flutter_map: ^3.0.0
+  latlong2: ^0.8.1
 
 
 dev_dependencies:

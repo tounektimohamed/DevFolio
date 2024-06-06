@@ -29,3 +29,34 @@ class ProjectUtils {
     "https://github.com/tounektimohamed/polarh-10"
   ];
 }
+class Acadimique {
+  static const List<String> banners = [
+    "assets/projects/images.png",
+    "assets/projects/isets.png",
+    "assets/projects/isims.png",
+  ];
+
+  static const List<String> icons = [
+    "assets/projects/images.png",
+    "assets/projects/isets.png",
+    "assets/projects/isims.png",
+  ];
+
+  static const List<String> titles = [
+    "Higher Institute of Technological Studies in tataouine",
+    "Higher Institute of Technological Studies in sfax",
+    "Higher Institute of Information and Multimedia in Sfax",
+  ];
+
+  static const List<String> description = [
+    "Information Systems Development",
+    "Professional Master's in Information Systems and Network Development",
+     "Research master of science in digital technologies for health care",
+    ];
+
+  static const List<String> links = [
+    "",
+    "",
+    ""
+  ];
+}

@@ -42,18 +42,35 @@ class PortfolioMobileTab extends StatelessWidget {
             enableInfiniteScroll: false,
           ),
         ),
-        Space.y!,
-        SizedBox(
-          height: AppDimensions.normalize(14),
-          width: AppDimensions.normalize(50),
-          child: OutlinedButton(
-            onPressed: () => openURL(StaticUtils.gitHub),
-            child: Text(
-              'See More',
-              style: AppText.l1b,
+
+        // Duplicate Content
+        const CustomSectionHeading(
+          text: "\nStudies",
+        ),
+
+        CarouselSlider.builder(
+          itemCount: Acadimique.titles.length,
+          itemBuilder: (BuildContext context, int itemIndex, int i) => Padding(
+            padding: const EdgeInsets.symmetric(vertical: 15.0),
+            child: ProjectCard(
+              projectIcon: Acadimique.icons[i],
+              projectLink: Acadimique.links[i],
+              projectTitle: Acadimique.titles[i],
+              projectDescription: Acadimique.description[i],
             ),
           ),
-        )
+          options: CarouselOptions(
+            height: height * 0.4,
+            autoPlay: true,
+            autoPlayInterval: const Duration(seconds: 5),
+            enlargeCenterPage: true,
+            autoPlayCurve: Curves.fastOutSlowIn,
+            autoPlayAnimationDuration: const Duration(milliseconds: 800),
+            enableInfiniteScroll: false,
+          ),
+        ),
+
+        Space.y!,
       ],
     );
   }

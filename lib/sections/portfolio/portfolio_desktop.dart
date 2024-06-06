@@ -55,7 +55,32 @@ class _PortfolioDesktopState extends State<PortfolioDesktop> {
                 style: AppText.l1b,
               ),
             ),
-          )
+          ),
+
+          // Duplicate Content
+          const CustomSectionHeading(
+            text: "\nStudies",
+          ),
+
+          Wrap(
+            alignment: WrapAlignment.center,
+            crossAxisAlignment: WrapCrossAlignment.center,
+            runSpacing: AppDimensions.normalize(10),
+            children: Acadimique.banners
+                .asMap()
+                .entries
+                .map(
+                  (e) => ProjectCard(
+                    banner: e.value,
+                    projectIcon: Acadimique.icons[e.key],
+                    projectLink: Acadimique.links[e.key],
+                    projectTitle: Acadimique.titles[e.key],
+                    projectDescription: Acadimique.description[e.key],
+                  ),
+                )
+                .toList(),
+          ),
+          Space.y2!,
         ],
       ),
     );

@@ -1,0 +1,71 @@
+{
+    "name": "Mohamed Tounekti",
+    "email": "Tounekti17@gmail.com",
+    "subtitles": [
+        "Flutter Developer",
+        "Technical Writer",
+        "UI/UX Designer"
+    ],
+    "blackWhitePhotoURL": "",
+    "coloredPhotoURL": "",
+    "socialLinks": [
+        {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/tsou.med/"
+        },
+        {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/tsou_tnk_med/"
+        },
+        {
+            "platform": "twitter",
+            "url": "https://x.com/MouhamdTounekti"
+        },
+        {
+            "platform": "linkedin",
+            "url": "https://www.linkedin.com/in/tounekti-mohamed-b38935213/"
+        },
+        {
+            "platform": "github",
+            "url": "https://github.com/tounektimohamed"
+        }
+     
+    ],
+    "aboutMeHeadline": "I'm Mohamed Tounekti, a Flutter developer and UI/UX Designer.",
+    "aboueMeDetails": "I am currently a second-year professional Master's student in Information Systems and Networks Development, as well as a second-year research Master's student in Digital Health Technology Sciences. I am advanced in developing Flutter applications and have various experiences in web development.",
+    "technologies": [
+        "Flutter",
+        "Dart",
+        "Python",
+        "Java"
+       
+    ],
+    "services": [
+        {
+            "icon": "assets/services/app.png",
+            "name": "Mobile App Development",
+            "description": "Android app development via Flutter\n- Splash Screen\n- Firebase Auth/Cloud\n- REST APIs\n- Maps integration and more...!"
+        }
+    ],
+    "hireMe": {
+        "whatsapp": "21181239"
+    },
+    "projects": [
+       
+        
+    ],
+    "contact": [
+        {
+            "param": "address",
+            "value": "Tunisia"
+        },
+        {
+            "param": "phone",
+            "value": "+2162118239"
+        },
+        {
+            "param": "email",
+            "value": "tounekti17@gmail.com"
+        }
+    ]
+}
