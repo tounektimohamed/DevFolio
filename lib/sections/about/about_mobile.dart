@@ -1,6 +1,8 @@
 import 'package:flutter/foundation.dart';
+import 'package:folio/data/active_data.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/utils/about_utils.dart';
+import 'package:folio/utils/image_utils.dart';
 import 'package:folio/utils/utils.dart';
 import 'package:folio/utils/work_utils.dart';
 
@@ -31,7 +33,7 @@ class AboutMobile extends StatelessWidget {
             text: 'Get to know me :)',
           ),
           Space.y1!,
-          Image.asset(
+          imageOrAsset(
             StaticUtils.mobilePhoto,
             height: height * 0.27,
           ),
@@ -82,7 +84,7 @@ class AboutMobile extends StatelessWidget {
             alignment: WrapAlignment.center,
             spacing: AppDimensions.normalize(3),
             runSpacing: AppDimensions.normalize(3),
-            children: kTools
+            children: activeData.skills
                 .map(
                   (e) => ToolTechWidget(techName: e),
                 )
@@ -96,13 +98,13 @@ class AboutMobile extends StatelessWidget {
           SizedBox(
             height: height * 0.02,
           ),
-          const AboutMeData(
+          AboutMeData(
             data: "Name",
-            information: "Mohamed Tounekti",
+            information: activeData.name + ' ' + activeData.surname,
           ),
-          const AboutMeData(
+          AboutMeData(
             data: "Email",
-            information: "tounekti17@gmail.com",
+            information: activeData.email,
           ),
           Space.y!,
           OutlinedButton(

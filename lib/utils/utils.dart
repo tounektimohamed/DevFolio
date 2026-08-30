@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:folio/data/active_data.dart';
 import 'package:folio/sections/about/about.dart';
 import 'package:folio/sections/contact/contact.dart';
 import 'package:folio/sections/home/home.dart';
@@ -10,12 +11,9 @@ class StaticUtils {
   static const String hi = 'assets/hi.gif';
 
   // photos
-  static const String mobilePhoto = 'assets/photos/mobile.png';
-  static const String coloredPhoto = 'assets/photos/colored.png';
-  static const String blackWhitePhoto = 'assets/photos/black-white.png';
-
-  // work
-
+  static String get mobilePhoto => activeData.photoMobile;
+  static String get coloredPhoto => activeData.photoColored;
+  static String get blackWhitePhoto => activeData.photoBlackWhite;
 
   // services
   static const String uiux = 'assets/services/ui.png';
@@ -34,19 +32,12 @@ class StaticUtils {
     "https://img.icons8.com/ios-filled/500/ffffff/medium-monogram--v1.png"
   ];
 
-  static const List<String> socialLinks = [
-    "https://facebook.com/tounektimohamed",
-    "https://instagram.com/tounektimohamed",
-    "https://twitter.com/tounektimohamed",
-    "https://linkedin.com/in/tounektimohamed",
-    "https://github.com/tounektimohamed",
-    "https://tounektimohamed.medium.com"
-  ];
+  static List<String> get socialLinks =>
+      activeData.socials.map((e) => e.url).toList();
 
-  static const String resume =
-      'https://drive.google.com/file/d/1fYgxVVO2SGjvyHD4Xi7irJ9DV7cL4d7k/view?usp=sharing';
+  static String get resume => activeData.resumeUrl;
 
-  static const String gitHub = 'https://github.com/tounektimohamed';
+  static String get gitHub => activeData.githubUrl;
 }
 
 class BodyUtils {

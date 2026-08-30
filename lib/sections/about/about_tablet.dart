@@ -1,6 +1,8 @@
 import 'package:folio/configs/configs.dart';
+import 'package:folio/data/active_data.dart';
 import 'package:folio/utils/about_utils.dart';
 import 'package:folio/utils/utils.dart';
+import 'package:folio/utils/image_utils.dart';
 import 'package:folio/utils/work_utils.dart';
 
 import 'package:folio/widget/custom_text_heading.dart';
@@ -35,7 +37,7 @@ class AboutTab extends StatelessWidget {
             ),
           ),
           Space.y1!,
-          Image.asset(
+          imageOrAsset(
             StaticUtils.mobilePhoto,
             height: height * 0.27,
           ),
@@ -81,7 +83,7 @@ class AboutTab extends StatelessWidget {
           Wrap(
             spacing: AppDimensions.normalize(3),
             runSpacing: AppDimensions.normalize(3),
-            children: kTools
+            children: activeData.skills
                 .map(
                   (e) => ToolTechWidget(techName: e),
                 )
@@ -97,14 +99,14 @@ class AboutTab extends StatelessWidget {
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   AboutMeData(
                     data: "Name",
-                    information: "Mohamed Tounekti",
+                    information: activeData.name + ' ' + activeData.surname,
                   ),
                   AboutMeData(
                     data: "Age",
-                    information: "24",
+                    information: activeData.age,
                   ),
                 ],
               ),
@@ -113,14 +115,14 @@ class AboutTab extends StatelessWidget {
               ),
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   AboutMeData(
                     data: "Email",
-                    information: "tounekti17@gmail.com",
+                    information: activeData.email,
                   ),
                   AboutMeData(
                     data: "From",
-                    information: "Tunisia",
+                    information: activeData.location,
                   ),
                 ],
               ),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../data/active_data.dart';
+
 class ContactUtils {
   static const List<IconData> contactIcon = [
     Icons.home,
@@ -13,9 +15,6 @@ class ContactUtils {
     "Email",
   ];
 
-  static const List<String> details = [
-    "Tunisia",
-    "+12621181239",
-    "tounekti17@gmail.com",
-  ];
+  static List<String> get details =>
+      activeData.contacts.map((e) => e.detail).toList();
 }

@@ -2,7 +2,10 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/animations/entrance_fader.dart';
 import 'package:folio/configs/configs.dart';
+import 'package:folio/data/active_data.dart';
+
 import 'package:folio/utils/utils.dart';
+import 'package:folio/utils/image_utils.dart';
 
 import 'package:folio/widget/social_links.dart';
 
@@ -26,7 +29,7 @@ class HomeTab extends StatelessWidget {
                 offset: const Offset(0, 0),
                 delay: const Duration(seconds: 1),
                 duration: const Duration(milliseconds: 800),
-                child: Image.asset(
+                child: imageOrAsset(
                   StaticUtils.blackWhitePhoto,
                   height: size.width < 1200
                       ? size.height * 0.75
@@ -67,14 +70,14 @@ class HomeTab extends StatelessWidget {
                 ),
                 Space.y1!,
                 Text(
-                  "Mohamed",
+                  activeData.name,
                   style: AppText.h1!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Tounekti",
+                  activeData.surname,
                   style: AppText.h1b!.copyWith(
                     height: 1,
                   ),
@@ -91,22 +94,12 @@ class HomeTab extends StatelessWidget {
                       ),
                       AnimatedTextKit(
                         animatedTexts: [
-                          TyperAnimatedText(
-                            ' Flutter Developer',
+...activeData.roles.map((r) => TyperAnimatedText(
+                            ' $r',
                             speed: const Duration(milliseconds: 50),
                             textStyle: AppText.b1,
-                          ),
-                          TyperAnimatedText(
-                            ' Full-Stack Developer',
-                            speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
-                          ),
-                          TyperAnimatedText(
-                            ' IoT Enthusiast',
-                            speed: const Duration(milliseconds: 50),
-                            textStyle: AppText.b1,
-                          ),
-                        ],
+                          )),
+],
                         isRepeatingAnimation: true,
                       ),
                     ],

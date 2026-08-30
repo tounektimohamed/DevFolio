@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/constants.dart';
 import 'package:folio/provider/app_provider.dart';
+import 'package:folio/utils/image_utils.dart';
 
 import 'package:provider/provider.dart';
 
@@ -88,14 +89,14 @@ class ProjectCardState extends State<ProjectCard> {
               children: [
                 widget.projectIcon != null
                     ? (width > 1135 || width < 950)
-                        ? Image.asset(
+                        ? imageOrAsset(
                             widget.projectIcon!,
                             height: height * 0.05,
                           )
                         : Row(
                             mainAxisSize: MainAxisSize.min,
                             children: [
-                              Image.asset(
+                              imageOrAsset(
                                 widget.projectIcon!,
                                 height: height * 0.03,
                               ),
@@ -147,8 +148,9 @@ class ProjectCardState extends State<ProjectCard> {
               child: FittedBox(
                 fit: BoxFit.fill,
                 child: widget.banner != null
-                    ? Image.asset(
+                    ? imageOrAsset(
                         widget.banner!,
+                        fit: BoxFit.cover,
                       )
                     : Container(),
               ),

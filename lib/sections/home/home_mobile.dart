@@ -1,8 +1,11 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:folio/configs/configs.dart';
+import 'package:folio/data/active_data.dart';
+
 
 import 'package:folio/utils/utils.dart';
+import 'package:folio/utils/image_utils.dart';
 import 'package:folio/widget/social_links.dart';
 
 class HomeMobile extends StatelessWidget {
@@ -21,7 +24,7 @@ class HomeMobile extends StatelessWidget {
             right: -AppDimensions.normalize(25),
             child: Opacity(
               opacity: 0.9,
-              child: Image.asset(
+              child: imageOrAsset(
                 StaticUtils.blackWhitePhoto,
                 height: AppDimensions.normalize(150),
               ),
@@ -57,14 +60,14 @@ class HomeMobile extends StatelessWidget {
                 ),
                 Space.y!,
                 Text(
-                  "Mohamed",
+                  activeData.name,
                   style: AppText.h3!.copyWith(
                     fontFamily: 'Montserrat',
                     fontWeight: FontWeight.w100,
                   ),
                 ),
                 Text(
-                  "Tounekti",
+                  activeData.surname,
                   style: AppText.h3b!.copyWith(
                     height: 1,
                   ),
@@ -78,23 +81,12 @@ class HomeMobile extends StatelessWidget {
                     ),
                     AnimatedTextKit(
                       animatedTexts: [
-                        TyperAnimatedText(
-                          ' Flutter Developer',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b2,
-                        ),
-                        TyperAnimatedText(
-                          ' Full-Stack Developer',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
-                          
-                        ),
-                        TyperAnimatedText(
-                          ' IoT Enthusiast',
-                          speed: const Duration(milliseconds: 50),
-                          textStyle: AppText.b1,
-                        ),
-                      ],
+...activeData.roles.map((r) => TyperAnimatedText(
+                            ' $r',
+                            speed: const Duration(milliseconds: 50),
+                            textStyle: AppText.b1,
+                          )),
+],
                       repeatForever: true,
                       isRepeatingAnimation: true,
                     ),
