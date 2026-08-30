@@ -20,6 +20,20 @@ import 'package:folio/configs/configs.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  ErrorWidget.builder = (details) {
+    return Material(
+      color: const Color(0xFF220000),
+      child: Center(
+        child: Padding(
+          padding: const EdgeInsets.all(24),
+          child: SelectableText(
+            'Erreur d’affichage :\n${details.exception}',
+            style: const TextStyle(color: Colors.white, fontSize: 14),
+          ),
+        ),
+      ),
+    );
+  };
   usePathUrlStrategy();
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,

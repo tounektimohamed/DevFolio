@@ -1,0 +1,112 @@
+{
+    "name_and_link": [
+        "Tounekti Mohamed",
+        "https://github.com/tounektimohamed/"
+    ],
+    "designation": [
+        "Web Developer.",
+        "Flutter Developer."
+    ],
+    "resume_download_link": "https://drive.google.com/file/d/1fYgxVVO2SGjvyHD4Xi7irJ9DV7cL4d7k/view",
+    "social_media": {
+        "1": [
+            "https://github.com/tounektimohamed/",
+            "github"
+        ],
+      
+        "2": [
+            "https://www.linkedin.com/in/tounekti-mohamed-b38935213/",
+            "linkedin"
+        ],
+      
+     
+        "3": [
+            "mailto:Tounekti17@gmail.com",
+            "email"
+        ]
+    },
+    "contact_me": {
+        "location": "Tataouine, Tunisia",
+        "open_for_opportunities": "Yes",
+        "picture": "mypic.png"
+    },
+    "about": "A passionate Software Developer 🚀 | Open Source enthusiast 📝 ",
+    "bio": "I enjoy contributing to open source projects and exploring technical solutions on Stack Overflow. I have gained solid hands-on experience working on various projects using Python, Node.js, Flutter, and Java. You can check out my contributions and open source projects on my GitHub profile..",
+    "what_i_do": {
+        "tools": [
+            "flutter.png",
+            "linux.png",
+            "c.png",
+            "cpp.png",
+            "java.png",
+            "python.png",
+            "bash.png",
+            "git.png"
+        ],
+        "proficiency": [
+            "Flutter--70",
+            "MERN Stack/--50",
+            "GNU/Linux--30",
+            "Git--65"
+        ]
+    },
+    "education": {
+        "1": {
+            "institute": "Higher Institute of Technological Studies ",
+            "location": "Tataouine",
+            "years": "2020 - 2023",
+            "description": "Information Systems Development",
+            "grades": "9.53 YGPA",
+            "logo": "isetta.jpg"
+        },
+        "2": {
+            "institute": "Higher Institute of Technological Studies",
+            "location": "Sfax",
+            "years": "2023 - 2025",
+            "description": "Professional Master's in Information Systems and Network Development",
+            "grades": "84%",
+            "logo": "isets.png"
+        },
+        "3": {
+            "institute": "Higher Institute of Information and Multimedia in Sfax",
+            "location": "Sfax",
+            "years": "2023 - 2025",
+            "description": "Research master of science in digital technologies for health care",
+            "grades": "94%",
+            "logo": "isims.png"
+        }
+    },
+    "experience": {
+        "1": {
+            "name": "Stage",
+            "role": "In ISET of tataouine",
+            "period": "feb 2023, mai 2023 ",
+            "description": "Developed a web application, a social network for deaf individuals.",
+            "image_name": "icon-72x72.png"
+        },
+        "2": {
+            "name": "Stage",
+            "role": "In the lab of MIRACL ,ISIMS sfax",
+            "period": "March, 2024 ",
+            "description": "Worked in the Flutter App for elderly individuals with Mild Cognitive Impairment (MCI)",
+            "image_name": "myHealth-removebg-preview.png"
+        }
+    },
+    "projects": {
+        "1": {
+            "name": "VertualCoach",
+            "tech_stack_used": "Flutter and firebase ",
+            "description": "With the virtual coach, we aim to enhance the quality of life for elderly individuals with Mild Cognitive Impairment (MCI) by protecting their health and providing other benefits. In addition to safeguarding their health, this system can contribute to improving daily quality of life, maintaining their independence, reducing stress and anxiety, strengthening their cognitive abilities, and offering emotional support. Let's explore together how this innovative technology can transform the daily lives of the elderly",
+            "general_or_github_link": "https://github.com/tounektimohamed/vertualCoach"
+        },
+        "2": {
+            "name": "Deaf_in",
+            "tech_stack_used": "Vue.js laravel ",
+            "description": "Made the backend of TechTrix '22, RCCIIT's tech fest. Handled 435+ participants, 60+ coordinators, and 560+ event registrations, without encountering a single production bug.",
+            "general_or_github_link": ""
+        }
+    },
+    "achievements": {
+        
+    }
+}

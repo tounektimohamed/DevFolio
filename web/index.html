@@ -31,6 +31,20 @@
 
   <title>Portfolio</title>
   <link rel="manifest" href="manifest.json">
+  <script>
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      try {
+        navigator.serviceWorker.getRegistrations().then(function (regs) {
+          regs.forEach(function (r) { r.unregister(); });
+        });
+        Object.defineProperty(navigator, 'serviceWorker', {
+          value: undefined,
+          configurable: true,
+        });
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
   <!--

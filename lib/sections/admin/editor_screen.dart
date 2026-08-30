@@ -1,6 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:folio/configs/app.dart';
 import 'package:folio/configs/configs.dart';
 import 'package:folio/data/active_data.dart';
 import 'package:folio/models/portfolio_data.dart';
@@ -16,12 +17,40 @@ class EditorScreen extends StatefulWidget {
   State<EditorScreen> createState() => _EditorScreenState();
 }
 
-class _EditorScreenState extends State<EditorScreen>
+class _EditorScreenState extends State<EditorScreen> {
+  @override
+  Widget build(BuildContext context) {
+    App.init(context);
+    return StreamBuilder<User?>(
+      stream: AuthService.instance.userStream,
+      builder: (context, snap) {
+        final user = snap.data;
+        if (user == null) {
+          return const LoginScreen();
+        }
+        return PortfolioEditorView(
+          key: ValueKey(user.uid),
+          uid: user.uid,
+        );
+      },
+    );
+  }
+}
+
+class PortfolioEditorView extends StatefulWidget {
+  const PortfolioEditorView({Key? key, required this.uid}) : super(key: key);
+
+  final String uid;
+
+  @override
+  State<PortfolioEditorView> createState() => _PortfolioEditorViewState();
+}
+
+class _PortfolioEditorViewState extends State<PortfolioEditorView>
     with SingleTickerProviderStateMixin {
   late TabController _tab;
   late PortfolioData _draft;
   bool _saving = false;
-  String? _loadedUid;
 
   @override
   void initState() {
@@ -80,27 +109,8 @@ class _EditorScreenState extends State<EditorScreen>
 
   @override
   Widget build(BuildContext context) {
-    return StreamBuilder<User?>(
-      stream: AuthService.instance.userStream,
-      builder: (context, snap) {
-        final user = snap.data;
-        if (user == null) {
-          _loadedUid = null;
-          return const LoginScreen();
-        }
-        if (_loadedUid != user.uid) {
-          _loadedUid = user.uid;
-          _draft = activeData.copy();
-        }
-        return _buildEditor(ValueKey(user.uid));
-      },
-    );
-  }
-
-  Widget _buildEditor(Key key) {
     final p = PortfolioProvider.state(context);
     return Scaffold(
-      key: key,
       appBar: AppBar(
         title: const Text('Portfolio Studio'),
         leading: IconButton(
