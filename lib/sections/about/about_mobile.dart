@@ -78,8 +78,10 @@ class AboutMobile extends StatelessWidget {
             ),
           ),
           Space.y!,
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          Wrap(
+            alignment: WrapAlignment.center,
+            spacing: AppDimensions.normalize(3),
+            runSpacing: AppDimensions.normalize(3),
             children: kTools
                 .map(
                   (e) => ToolTechWidget(techName: e),

@@ -7,10 +7,14 @@ void openURL(String url) => launchUrl(
 
 // Tools & Tech
 final kTools = [
-  
   "Flutter",
   "Dart",
+  "React",
+  "TypeScript",
+  "Firebase",
+  "Node.js",
+  "Kotlin",
   "Python",
-  "Java",
-  "C++",
+  "IoT / MQTT",
 ];
+
