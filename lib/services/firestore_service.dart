@@ -51,9 +51,6 @@ class FirestoreService {
     if (slug.isEmpty) {
       return false;
     }
-    if (slug == 'mohamed') {
-      return true;
-    }
     final docs = await _db
         .collection(_portfolios)
         .where('slug', isEqualTo: slug)

@@ -21,6 +21,7 @@ class _EditorScreenState extends State<EditorScreen>
   late TabController _tab;
   late PortfolioData _draft;
   bool _saving = false;
+  String? _loadedUid;
 
   @override
   void initState() {
@@ -82,17 +83,24 @@ class _EditorScreenState extends State<EditorScreen>
     return StreamBuilder<User?>(
       stream: AuthService.instance.userStream,
       builder: (context, snap) {
-        if (snap.data == null) {
+        final user = snap.data;
+        if (user == null) {
+          _loadedUid = null;
           return const LoginScreen();
         }
-        return _buildEditor();
+        if (_loadedUid != user.uid) {
+          _loadedUid = user.uid;
+          _draft = activeData.copy();
+        }
+        return _buildEditor(ValueKey(user.uid));
       },
     );
   }
 
-  Widget _buildEditor() {
+  Widget _buildEditor(Key key) {
     final p = PortfolioProvider.state(context);
     return Scaffold(
+      key: key,
       appBar: AppBar(
         title: const Text('Portfolio Studio'),
         leading: IconButton(
