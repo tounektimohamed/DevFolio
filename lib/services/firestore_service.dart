@@ -51,14 +51,11 @@ class FirestoreService {
     if (slug.isEmpty) {
       return false;
     }
-    final docs = await _db
-        .collection(_portfolios)
-        .where('slug', isEqualTo: slug)
-        .limit(1)
-        .get();
-    if (docs.docs.isEmpty) {
+    final doc = await _db.collection(_public).doc(slug).get();
+    if (!doc.exists) {
       return true;
     }
-    return exceptUid != null && docs.docs.first.id == exceptUid;
+    final owner = doc.data()?['ownerUid'] as String?;
+    return exceptUid != null && owner == exceptUid;
   }
 }
