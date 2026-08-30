@@ -45,13 +45,14 @@ class Footer extends StatelessWidget {
             width: width * 0.8, // Adjusted width for better map view
             child: FlutterMap(
               options: MapOptions(
-                center: LatLng(32.8822047, 10.4984132), // Updated coordinates
-                zoom: 13.0,
+                initialCenter: LatLng(32.8822047, 10.4984132), // Updated coordinates
+                initialZoom: 13.0,
               ),
               children: [
                 TileLayer(
                   urlTemplate: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
                   subdomains: ['a', 'b', 'c'],
+                  userAgentPackageName: 'com.example.folio',
                 ),
                 MarkerLayer(
                   markers: [
@@ -59,7 +60,7 @@ class Footer extends StatelessWidget {
                       width: 80.0,
                       height: 80.0,
                       point: LatLng(32.8822047, 10.4984132), // Updated coordinates
-                      builder: (ctx) => Container(
+                      child: Container(
                         child: Icon(
                           Icons.location_pin,
                           color: Colors.red,

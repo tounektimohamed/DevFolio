@@ -1,0 +1,1 @@
+ /tmp/opencode/DevFolioFresh/.dart_tool/flutter_build/2e12787927637ed004f7c4938bc36460/link_hooks_result.json: 

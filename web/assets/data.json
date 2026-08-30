@@ -1,0 +1,140 @@
+{
+    "name": "Mohamed Tounekti",
+    "email": "Tounekti17@gmail.com",
+    "subtitles": [
+        "Flutter Developer",
+        "Full-Stack Developer",
+        "IoT Enthusiast"
+    ],
+    "blackWhitePhotoURL": "",
+    "coloredPhotoURL": "",
+    "socialLinks": [
+        {
+            "platform": "facebook",
+            "url": "https://www.facebook.com/tsou.med/"
+        },
+        {
+            "platform": "instagram",
+            "url": "https://www.instagram.com/tsou_tnk_med/"
+        },
+        {
+            "platform": "twitter",
+            "url": "https://x.com/MouhamdTounekti"
+        },
+        {
+            "platform": "linkedin",
+            "url": "https://www.linkedin.com/in/tounekti-mohamed-b38935213/"
+        },
+        {
+            "platform": "github",
+            "url": "https://github.com/tounektimohamed"
+        }
+    ],
+    "aboutMeHeadline": "I'm Mohamed Tounekti, a Flutter & Full-Stack Developer building mobile apps, web platforms and IoT solutions.",
+    "aboueMeDetails": "I am a Professional Master's student in Information Systems and Networks Development, as well as a Research Master's student in Digital Health Technology Sciences. I am advanced in developing Flutter applications, full-stack web apps (React, TypeScript, Node.js), IoT projects and AI-powered tools with Google Gemini.",
+    "technologies": [
+        "Flutter",
+        "Dart",
+        "React",
+        "TypeScript",
+        "Firebase",
+        "Node.js",
+        "Kotlin",
+        "Python",
+        "IoT / MQTT"
+    ],
+    "services": [
+        {
+            "icon": "assets/services/app.png",
+            "name": "Mobile App Development",
+            "description": "Cross-platform apps with Flutter\n- Firebase Auth / Cloud / Messaging\n- REST APIs\n- Maps & notifications"
+        },
+        {
+            "icon": "assets/services/rapid.png",
+            "name": "Full-Stack Web Development",
+            "description": "Modern web platforms\n- React + TypeScript + Vite\n- Node.js / Express backends\n- PWA & responsive design"
+        },
+        {
+            "icon": "assets/services/blog.png",
+            "name": "AI & OCR Solutions",
+            "description": "AI-powered tools\n- Google Gemini & AI Studio\n- OCR document scanning\n- Smart data extraction"
+        },
+        {
+            "icon": "assets/services/open.png",
+            "name": "IoT & Embedded Systems",
+            "description": "Connected devices\n- ESP32 & sensor projects\n- MQTT brokers\n- Data pipelines & telemetry"
+        },
+        {
+            "icon": "assets/services/ui.png",
+            "name": "UI/UX Designing",
+            "description": "Modern UI/UX Designing\n- Responsive interfaces\n- Mobile & web designs\n- Interactive prototypes"
+        }
+    ],
+    "hireMe": {
+        "whatsapp": "21181239"
+    },
+    "projects": [
+        {
+            "title": "Taqyem",
+            "tech": "Flutter, Firebase",
+            "description": "Complete evaluation & assessment management platform with results tracking and offline support.",
+            "url": "https://github.com/tounektimohamed/taqyem"
+        },
+        {
+            "title": "smartCare",
+            "tech": "Flutter, Firebase",
+            "description": "Medication reminder mobile app with smart push notifications and calendar timelines.",
+            "url": "https://github.com/tounektimohamed/smartCare"
+        },
+        {
+            "title": "DREHATT",
+            "tech": "Flutter, flutter_map",
+            "description": "Geospatial & mapping app with GeoJSON layers, offline MBTiles and drawing tools.",
+            "url": "https://github.com/tounektimohamed/DREHATT_app"
+        },
+        {
+            "title": "Joussour",
+            "tech": "Flutter, Firebase Functions",
+            "description": "Class & student management app with notifications and admin dashboard.",
+            "url": "https://github.com/tounektimohamed/mon-classe"
+        },
+        {
+            "title": "Plontant l'Avenir",
+            "tech": "React, TypeScript, Gemini, Leaflet",
+            "description": "Scout digital platform with maps, QR codes and AI-assisted workflows.",
+            "url": "https://github.com/tounektimohamed/Plontant-l-avinir-"
+        },
+        {
+            "title": "Finances Scouts",
+            "tech": "React, Express, Recharts, Gemini",
+            "description": "Financial dashboard with charts, PDF receipts, AI insights and PWA.",
+            "url": "https://github.com/tounektimohamed/Finances-scouts-"
+        },
+        {
+            "title": "Taqyem OCR",
+            "tech": "Google AI Studio, Gemini",
+            "description": "AI-powered OCR application for document scanning and text extraction.",
+            "url": "https://github.com/tounektimohamed/TaqyemOCR"
+        },
+        {
+            "title": "Camp Connect",
+            "tech": "Kotlin, Android",
+            "description": "Native Android app for managing scout camps.",
+            "url": "https://github.com/tounektimohamed/Camp-connect-"
+        }
+    ],
+    "contact": [
+        {
+            "param": "address",
+            "value": "Tunisia"
+        },
+        {
+            "param": "phone",
+            "value": "+2162118239"
+        },
+        {
+            "param": "email",
+            "value": "tounekti17@gmail.com"
+        }
+    ]
+}

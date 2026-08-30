@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/url_strategy.dart';
 import 'package:folio/provider/app_provider.dart';
 import 'package:folio/provider/drawer_provider.dart';
 import 'package:folio/provider/scroll_provider.dart';
 import 'package:folio/sections/main/main_section.dart';
 import 'package:provider/provider.dart';
-import 'package:url_strategy/url_strategy.dart';
 import 'package:folio/configs/core_theme.dart' as theme;
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  setPathUrlStrategy();
+  usePathUrlStrategy();
   runApp(const MyApp());
 }
 
