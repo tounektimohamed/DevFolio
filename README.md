@@ -1,54 +1,115 @@
 <div align="center">
+<br>
 
-# Mohamed Tounekti — DevFolio
+<h1>DevFolio 🚀</h1>
+<p><em>DevFolio is my personal developer portfolio — a responsive, animated single-page application built with Flutter and deployed on Vercel, showcasing my projects, skills, education, services and contact details</em></p>
 
-**Flutter & Full-Stack Developer** building mobile apps, web platforms and IoT solutions.
+![Flutter](https://img.shields.io/badge/Flutter-02569B?logo=flutter&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=black)
 
-![Flutter](https://img.shields.io/badge/Flutter-3.x-02569B?logo=flutter)
-![Dart](https://img.shields.io/badge/Dart-0175C2?logo=dart)
-![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript)
-![Firebase](https://img.shields.io/badge/Firebase-FFCA28?logo=firebase)
+![GitHub stars](https://img.shields.io/github/stars/tounektimohamed/DevFolio)
+![GitHub forks](https://img.shields.io/github/forks/tounektimohamed/DevFolio)
+![GitHub issues](https://img.shields.io/github/issues/tounektimohamed/DevFolio)
+![Repo size](https://img.shields.io/github/repo-size/tounektimohamed/DevFolio)
+![License](https://img.shields.io/github/license/tounektimohamed/DevFolio)
 
 </div>
 
-## 🚀 About
+---
 
-A responsive, animated portfolio built with **Flutter**. Showcases selected projects — mobile apps, full-stack web platforms, AI tools and IoT systems — plus my education, services, and contact info.
+## 📑 Table of Contents
+- [Overview](#overview)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Project Structure](#project-structure)
+- [Getting Started](#getting-started)
+- [Live Demo](#live-demo)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+
+## 📖 Overview
+
+**DevFolio** is my personal developer portfolio — a responsive, animated single-page application built with **Flutter** and deployed on **Vercel**, showcasing my projects, skills, education, services and contact details.
 
 ## ✨ Features
 
-- Responsive layout (desktop / tablet / mobile)
-- Dark & light theming
-- Animated sections & skill chips
-- Projects section with the main works
-- Interactive map of my location
-- "Studies" section for academic background
+- ✓ Responsive layout (desktop / tablet / mobile)
+- ✓ Dark & light theming
+- ✓ Animated hero & skill chips
+- ✓ Featured projects showcase with generated banners
+- ✓ Interactive location map
+- ✓ Studies & services sections
+- ✓ Contact section with email, LinkedIn and GitHub
 
-## 🛠 Featured Projects
+## 🛠️ Tech Stack
 
-| Project | Stack |
-|---------|-------|
-| [Taqyem](https://github.com/tounektimohamed/taqyem) | Flutter, Firebase |
-| [smartCare](https://github.com/tounektimohamed/smartCare) | Flutter, Firebase |
-| [DREHATT](https://github.com/tounektimohamed/DREHATT_app) | Flutter, flutter_map |
-| [Joussour](https://github.com/tounektimohamed/mon-classe) | Flutter, Cloud Functions |
-| [Plontant l'Avenir](https://github.com/tounektimohamed/Plontant-l-avinir-) | React, TS, Gemini, Leaflet |
-| [Finances Scouts](https://github.com/tounektimohamed/Finances-scouts-) | React, Express, Recharts, Gemini |
-| [Taqyem OCR](https://github.com/tounektimohamed/TaqyemOCR) | Google AI Studio, Gemini |
-| [Camp Connect](https://github.com/tounektimohamed/Camp-connect-) | Kotlin, Android |
+Flutter, Dart, Firebase.
 
-## 🏃 Run Locally
+## 📁 Project Structure
+
+```text
+.
+assets
+  photos
+    black-white.png
+    colored.png
+    mobile.png
+  projects
+    android.png
+    avenir_banner.png
+    avenir_icon.png
+    camp_banner.png
+    camp_icon.png
+    drehatt_banner.png
+    drehatt_icon.png
+    finances_banner.png
+    finances_icon.png
+    flutter.png
+    images.png
+    isets.png
+    isetta.png
+    isims.png
+    java.png
+    joussour_banner.png
+    joussour_icon.png
+    messenger.png
+    ocr_banner.png
+    ocr_icon.png
+```
+
+## 🚀 Getting Started
 
 ```bash
+git clone https://github.com/tounektimohamed/DevFolio.git
+cd DevFolio
 flutter pub get
-flutter run -d chrome
-# or build with:
-flutter build web
+flutter run
 ```
+
+> Requires the [Flutter SDK](https://docs.flutter.dev/get-started/install) (stable channel).
+
+## 🌐 Live Demo
+
+The project is deployed and reachable at **[dev-folio-azure.vercel.app](https://dev-folio-azure.vercel.app)**.
+
+## 🤝 Contributing
+
+Contributions, issues and feature requests are welcome! Feel free to [open an issue](https://github.com/tounektimohamed/DevFolio/issues) or submit a pull request.
+
+## 📄 License
+Licensed under the [MIT](LICENSE) license.
 
 ## 📬 Contact
 
-- Email: tounekti17@gmail.com
-- LinkedIn: [tounekti-mohamed](https://www.linkedin.com/in/tounekti-mohamed-b38935213/)
-- GitHub: [tounektimohamed](https://github.com/tounektimohamed)
+
+## 📬 Contact
+
+- **Email:** tounekti17@gmail.com
+- **LinkedIn:** [tounekti-mohamed](https://www.linkedin.com/in/tounekti-mohamed-b38935213/)
+- **GitHub:** [tounektimohamed](https://github.com/tounektimohamed)
+
+---
+
+<div align="center">Built with ❤️ by **Mohamed Tounekti**</div>
